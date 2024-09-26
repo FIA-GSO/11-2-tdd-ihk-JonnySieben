@@ -120,7 +120,7 @@ testdaten = [
     (0, 'ungenügend'),
 ]
 
-throwData = [
+throw = [
     (-1, ValueError),
     (101, ValueError),
     ('text', TypeError)
@@ -130,7 +130,7 @@ throwData = [
 def test_bewerte(prozent, erwartet):
     assert prozentwert(prozent) == erwartet
 
-@pytest.mark.parametrize("prozent, erwartet", throwData)
+@pytest.mark.parametrize("prozent, erwartet", throw)
 def test_bewerte_Throw(prozent, erwartet):
     with pytest.raises(erwartet):
         notenstring(prozent)
