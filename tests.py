@@ -1,5 +1,5 @@
-def test__prozentausgabe(prozent, maxpunkte, erwartung):
-    wert = prozent
+def test__prozentausgabe(punkte, maxpunkte, erwartung):
+    wert = punkte
     max = maxpunkte
     soll = erwartung
 
@@ -8,8 +8,8 @@ def test__prozentausgabe(prozent, maxpunkte, erwartung):
     assert ist == soll
 
 
-def test__prozentausgabe_value_error(prozent, maxpunkte, erwartung):
-    wert = prozent
+def test__prozentausgabe_value_error(punkte, maxpunkte, erwartung):
+    wert = punkte
     max = maxpunkte
     soll = erwartung
 
@@ -18,8 +18,8 @@ def test__prozentausgabe_value_error(prozent, maxpunkte, erwartung):
     with pytest.raises(ValueError)
         assert ist == soll
 
-def test__prozentausgabe_type_error(prozent, maxpunkte, erwartung):
-    wert = prozent
+def test__prozentausgabe_type_error(punkte, maxpunkte, erwartung):
+    wert = punkte
     max = maxpunkte
     soll = erwartung
 
