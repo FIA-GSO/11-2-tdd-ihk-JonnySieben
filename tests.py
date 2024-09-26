@@ -95,7 +95,7 @@ test__notenausgabe(29, "ungenügend")
 test__notenausgabe_value_error(-1, "ungenügend")
 
 # 101%
-test__notenausgabe_value_error(101%, "eins")
+test__notenausgabe_value_error(101%, "sehr gut")
 
 # Prozentwert = "string"
 test__notenausgabe_type_error("null", "ungenügent")
